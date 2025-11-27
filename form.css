@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+  color: #ffffff;
+  background: #103332;
+  background: linear-gradient(
+    90deg,
+    rgb(52, 134, 131) 1%,
+    rgb(22, 48, 109) 46%,
+    rgb(18, 113, 132) 100%
+  );
+  border: 3px solid rgb(0, 221, 255);
+  width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 6px 7px 40px rgb(4, 143, 250);
+
+  margin-bottom: 20px;
+}
+form {
+  width: 550px;
+  margin: 0px auto;
+  border-radius: 20px;
+  padding: 30px;
+}
+fieldset {
+  padding: 15px;
+  padding-right: 10px;
+  border: 3px dashed rgb(6, 220, 240);
+  border-radius: 27px;
+  background: #2b665f;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 66, 133) 11%,
+    rgb(33, 77, 134) 89%
+  );
+}
+legend {
+  color: white;
+  font-weight: 900;
+  font-size: 17px;
+  padding: 8px 15px;
+  border: 2px solid rgb(65, 162, 188);
+  background: #26c7b9;
+  background: linear-gradient(
+    90deg,
+    rgb(34, 118, 111) 51%,
+    rgb(5, 39, 29) 100%
+  );
+  border-radius: 15px;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 10px 7px;
+}
+
+label {
+  color: yellow;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+input,
+textarea,
+select {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+input:required {
+  border: 2px solid red;
+}
+
+input:optional {
+  border: 2px solid rgb(11, 237, 11);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: blueviolet;
+  box-shadow: 3px 4px 20px rgb(10, 237, 10);
+}
+
+input + P {
+  display: none;
+  background-color: brown;
+  width: 218px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+input:focus + p {
+  display: block;
+}
+
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"]:checked + label {
+  font-size: 20px;
+  color: cyan;
+}
+input[type="email"] ~ img {
+  height: 20px;
+  width: 20px;
+  display: none;
+}
+
+input[type="email"]:invalid ~ .Invalid {
+  display: inline;
+}
+input[type="email"]:valid ~ .Valid {
+  display: inline;
+}
+input[type="reset"] {
+  margin: 10px;
+  padding: 10px;
+  font-weight: 800;
+}
+input[type="submit"] {
+  margin: 10px;
+  padding: 10px;
+  font-weight: 800;
+}
+input[type="file"] {
+  width: 230px;
+}
