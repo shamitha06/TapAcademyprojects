@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="/Day5.1/respons.html">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="firstname">First Name</label></td>
+            <td>
+              <input
+                name="fname"
+                type="text"
+                placeholder="Ex:Shamitha"
+                minlength="2"
+                maxlength="25"
+                required
+              />
+              <p>Enter your Name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastname">Last Name</label></td>
+            <td>
+              <input
+                name="lname"
+                type="text"
+                placeholder="Ex:Bommaka"
+                optional
+              />
+              <p>Enter your lastname</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Mob">Mobile</label></td>
+            <td>
+              <input type="tel" placeholder="+91 9876543210" required />
+              <p>Enter your number</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                name="email"
+                type="email"
+                placeholder="abcdefghijkl@gmail.com"
+                required
+              />
+              <p>Enter your email</p>
+              <img class="Invalid" src="delete.png" alt="Invalid" />
+              <img class="Valid" src="check-button.png" alt="Invalid" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input
+                name="password"
+                type="password"
+                placeholder="min 5Characters"
+                required
+              />
+              <p>Enter your password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cpassword">Conform password</label></td>
+            <td>
+              <input type="password" placeholder="min 5Characters" optional />
+              <p>Retype your password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td>
+              <input type="date" required />
+              <p>Enter your dateofbirth</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input name="gender" type="radio" value="MALE" />
+              <label>Male</label>
+
+              <input name="gender" type="radio" value="FEMALE" />
+              <label>Female</label>
+
+              <input name="gender" type="radio" value="CUSTOM" />
+              <label>Custom</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+              <select>
+                <option value="">------Select country----</option>
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="LONDON">LONDON</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="picture">Upload-picture</label></td>
+            <td><input type="file" multiple /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="reset" />
+
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="select Course">Select Course</label>
+            </td>
+            <td>
+              <select>
+                <option value="">------Select course-----</option>
+                <option value="">Python Full Stack</option>
+                <option value="">Java Full Stack</option>
+                <option value="">MERN Stack</option>
+                <option value="">Python for Datascience</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="delivery mode">Delivery Mode</label>
+            </td>
+            <td>
+              <input name="delivery mode" type="radio" value="OFFLINE" />
+              <label>OFFLINE</label>
+              <input name="delivery mode" type="radio" value="ONLINE" />
+              <label>ONLINE</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="comments">Comments</label></td>
+            <td>
+              <textarea
+                style="resize: none"
+                rows="4"
+                cols="26"
+                name="feedback"
+                id=""
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
